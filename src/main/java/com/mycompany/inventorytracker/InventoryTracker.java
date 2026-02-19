@@ -17,4 +17,10 @@ public class InventoryTracker {
     public int checkStockLevel(String stock) {
         return 0;
     }
+    
+    public void alertLowStock(String stock, int currentLevel, int threshold) {
+        if (currentLevel <= threshold) {
+            System.out.println("LOW STOCK ALERT for " + stock + ": " + currentLevel);
+        }
+    }
 }
